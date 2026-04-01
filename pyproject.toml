@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oslo"
+version = "1.0.0"
+description = "Open Speech Language Optimizer - Real-time speech translation"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "OSLO Contributors"}
+]
+keywords = ["speech", "translation", "asr", "real-time", "transcription"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = [
+    "torch",
+    "transformers",
+    "sounddevice",
+    "numpy",
+    "librosa",
+    "noisereduce",
+    "scipy",
+    "pydub",
+    "silero-vad",
+    "groq",
+    "psutil",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
+
+[project.scripts]
+oslo = "oslo.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/user/oslo"
+Documentation = "https://github.com/user/oslo#readme"
+Repository = "https://github.com/user/oslo"
+Issues = "https://github.com/user/oslo/issues"

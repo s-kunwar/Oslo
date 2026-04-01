@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la *.py)",
+      "Bash(dir *.py)",
+      "Bash(find . -maxdepth 1 -type f -name *.py -o -name *.txt -o -name *.md)"
+    ]
+  }
+}

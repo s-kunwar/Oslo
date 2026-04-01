@@ -1,0 +1,26 @@
+# Core dependencies
+torch
+transformers
+sounddevice
+numpy
+librosa
+noisereduce
+scipy
+pydub
+
+# Speech recognition and VAD
+silero-vad
+
+# Translation API
+groq
+
+# Audio processing (already included in librosa)
+# librosa
+
+# Optional: For additional audio processing
+# pyaudio
+# webrtcvad
+
+# Development tools
+# pytest
+# pytest-asyncio
