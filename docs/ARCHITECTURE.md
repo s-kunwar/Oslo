@@ -1,6 +1,6 @@
 # OSLO Architecture
 
-This document describes the architecture of OSLO (Open Speech Language Optimizer).
+This document describes the architecture of OSLO (Open Speech Language Optimizer)
 
 ## Overview
 
