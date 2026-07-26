@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Alternative transcription backends for speech recognition.
+Alternative transcription backends for speech recognition
 
 Currently supports Moonshine ASR streaming models.
 Extensible architecture for adding additional backends (Whisper, etc.).
