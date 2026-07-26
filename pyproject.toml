@@ -4,18 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "oslo"
-version = "1.0.0"
-description = "Open Speech Language Optimizer - Real-time speech translation"
+version = "0.1.0"
+description = "High-performance real-time speech translation with multi-language support"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
 authors = [
-    {name = "OSLO Contributors"}
+    {name = "Kunwar Singh", email = "kunwar@example.com"}
 ]
-keywords = ["speech", "translation", "asr", "real-time", "transcription"]
+keywords = ["speech", "translation", "asr", "real-time", "transcription", "multilingual"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
@@ -27,30 +28,41 @@ classifiers = [
     "Topic :: Multimedia :: Sound/Audio :: Speech",
 ]
 dependencies = [
-    "torch",
-    "transformers",
-    "sounddevice",
-    "numpy",
-    "librosa",
-    "noisereduce",
-    "scipy",
-    "pydub",
-    "silero-vad",
-    "groq",
-    "psutil",
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "sounddevice>=0.4.5",
+    "numpy>=1.21.0",
+    "librosa>=0.10.0",
+    "noisereduce>=2.0.0",
+    "scipy>=1.9.0",
+    "pydub>=0.25.0",
+    "silero-vad>=4.0.0",
+    "groq>=0.4.0",
+    "psutil>=5.9.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest",
-    "pytest-asyncio",
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=4.0",
 ]
 
 [project.scripts]
 oslo = "oslo.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/user/oslo"
-Documentation = "https://github.com/user/oslo#readme"
-Repository = "https://github.com/user/oslo"
-Issues = "https://github.com/user/oslo/issues"
+Homepage = "https://github.com/s-kunwar/oslo"
+Documentation = "https://github.com/s-kunwar/oslo#readme"
+Repository = "https://github.com/s-kunwar/oslo"
+Issues = "https://github.com/s-kunwar/oslo/issues"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 100

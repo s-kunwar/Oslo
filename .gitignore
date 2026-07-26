@@ -1,8 +1,13 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -20,12 +25,20 @@ wheels/
 .installed.cfg
 *.egg
 
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
 # Virtual environments
 venv/
-.venv/
 env/
-.env/
 ENV/
+.venv
 
 # IDE
 .vscode/
@@ -33,48 +46,24 @@ ENV/
 *.swp
 *.swo
 *~
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.nox/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-# Secrets and environment
+# Environment variables
 .env
 .env.local
-*.pem
-*.key
 
-# Logs
-*.log
-logs/
-
-# Temporary files
-*.tmp
-*.temp
-.cache/
-
-# Audio files (generated during testing)
+# Audio files
 *.wav
 *.mp3
-*.ogg
+*.flac
+*.m4a
 
-# Model cache
-models/
-*.bin
-*.pt
-*.pth
+# Model files (optional - uncomment if storing locally)
+# *.pt
+# *.pth
+# *.onnx
+
+# Project artifacts
+project_report.pdf
+RESEARCH_PROJECT_TRANSFORMATION_PLAN.md
+CLAUDE.md
