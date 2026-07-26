@@ -1,6 +1,6 @@
 # OSLO Research Project Transformation Plan
 
-**Objective:** Convert OSLO from a basic prototype into a production-ready, academically rigorous research project ready for publication and reproducibility.
+**Objective:** Convert OSLO from a basic prototype into a production-ready, academically rigorous research project ready for publication and reproducibility
 
 **Timeline:** 4 weeks (Phases 1-4)
 **Last Updated:** 2026-06-14
