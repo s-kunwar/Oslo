@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-A high-performance real-time speech translation system. Designed for low-latency, multi-language transcription and translation with intelligent audio processing and parallel optimizations.
+A high-performance real-time speech translation system. Designed for low-latency, multi-language transcription and translation with intelligent audio processing and parallel optimizations
 
 ## Features
 
